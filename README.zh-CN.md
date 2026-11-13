@@ -4,18 +4,18 @@
 
 Lisper 是一款 Windows 语音输入工具。按一下 `Right Alt` 开始说话，再按一下结束，整理好的文字即输入到光标所在的应用：Claude Code、Cursor、VS Code、终端、浏览器或聊天窗口。
 
-使用 **BYOK**（自带 API Key）模式时，Lisper 免费。语音识别服务与文本模型由你选择，例如 Groq 免费额度，或在自己显卡上运行的 whisper.cpp 与 Ollama。语音和文字直接发送到你配置的服务，不经过 Lisper 服务器。
+使用 **BYOK**（自带 API Key）模式时，Lisper 免费。语音识别服务与文本模型由你选择，例如在自己显卡上运行的 whisper.cpp 与 Ollama，或 Groq 免费额度。语音和文字直接发送到你配置的服务，不经过 Lisper 服务器。
 
 [下载 Windows 版](https://lisper.me/zh/download?utm_source=github&utm_medium=readme) · [官网](https://lisper.me/zh?utm_source=github&utm_medium=readme) · [配置教程](#配置教程) · [反馈问题](https://github.com/lisperme/voice-typing/issues)
 
-<p align="center"><img src="assets/byok-groq-settings.jpg" alt="Lisper BYOK 设置页已连接 Groq API，实现免费语音输入" width="85%"></p>
+<p align="center"><img src="assets/byok-local-settings.jpg" alt="Lisper BYOK 设置页在本机运行 whisper.cpp 与 Ollama，实现免费离线语音输入" width="85%"></p>
 
 ## 三种使用方式
 
 | 方式 | 费用 | 音频去向 | 适合 |
 |---|---|---|---|
-| **Groq 免费额度（BYOK）** | Groq 免费额度内不收费 | Groq API，使用你自己的 key | 任何电脑，无需独立显卡 |
 | **whisper.cpp + Ollama（BYOK）** | 免费 | 留在本机，完全离线 | 8GB 及以上显存的 NVIDIA 显卡 |
+| **Groq 免费额度（BYOK）** | Groq 免费额度内不收费 | Groq API，使用你自己的 key | 任何电脑，无需独立显卡 |
 | **Lisper 云端** | 免费起步，另有付费方案 | Lisper 服务器 | 登录即用，无需配置 |
 
 BYOK 支持任何兼容 OpenAI 接口的服务，云端或本机均可。Lisper 云端方案见[定价页](https://lisper.me/zh/pricing?utm_source=github&utm_medium=readme)。
@@ -28,8 +28,8 @@ BYOK 支持任何兼容 OpenAI 接口的服务，云端或本机均可。Lisper 
 
 ## 配置教程
 
-- [用 Groq Whisper API 免费语音输入](docs/byok-groq-free-voice-typing.md)：无需显卡，约 5 分钟完成。
 - [用 whisper.cpp 与 Ollama 离线语音输入](docs/byok-offline-whisper-cpp-ollama.md)：完全在本机显卡上运行。
+- [用 Groq Whisper API 免费语音输入](docs/byok-groq-free-voice-typing.md)：无需显卡，约 5 分钟完成。
 
 教程为英文，界面文字与截图一致。
 
@@ -54,7 +54,7 @@ BYOK 支持任何兼容 OpenAI 接口的服务，云端或本机均可。Lisper 
 
 ### Lisper 免费吗？
 
-免费。BYOK 模式不收费，只需支付所选服务商的费用；Groq 免费额度与本地模型均不产生费用。Lisper 云端同样可以免费起步。
+免费。BYOK 模式不收费，只需支付所选服务商的费用；本地模型与 Groq 免费额度均不产生费用。Lisper 云端同样可以免费起步。
 
 ### BYOK 模式下音频会经过 Lisper 服务器吗？
 
@@ -66,7 +66,7 @@ BYOK 支持任何兼容 OpenAI 接口的服务，云端或本机均可。Lisper 
 
 ### BYOK 支持哪些服务？
 
-任何兼容 OpenAI 接口的服务：Groq、OpenAI、本地 whisper.cpp 服务、Ollama 等。服务地址须以 `/v1` 结尾。
+任何兼容 OpenAI 接口的服务：本地 whisper.cpp 服务、Ollama、Groq、OpenAI 等。服务地址须以 `/v1` 结尾。
 
 ### 源代码公开吗？
 

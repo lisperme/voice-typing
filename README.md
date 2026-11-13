@@ -4,18 +4,18 @@
 
 Lisper is a voice typing app for Windows. Press `Right Alt`, speak, press it again, and clean text is typed into the app where your cursor is: Claude Code, Cursor, VS Code, a terminal, a browser or a chat window.
 
-With **BYOK** (bring your own key), Lisper is free. You connect it to a speech recognition service and a text model of your choice, such as the Groq free tier or whisper.cpp and Ollama running on your own GPU. Your voice and text go straight to the services you configure and never pass through Lisper's servers.
+With **BYOK** (bring your own key), Lisper is free. You connect it to a speech recognition service and a text model of your choice, such as whisper.cpp and Ollama running on your own GPU, or the Groq free tier. Your voice and text go straight to the services you configure and never pass through Lisper's servers.
 
 [Download for Windows](https://lisper.me/download?utm_source=github&utm_medium=readme) · [Website](https://lisper.me/?utm_source=github&utm_medium=readme) · [Setup guides](#setup-guides) · [Report an issue](https://github.com/lisperme/voice-typing/issues)
 
-<p align="center"><img src="assets/byok-groq-settings.jpg" alt="Lisper BYOK settings connected to the Groq API for free voice typing" width="85%"></p>
+<p align="center"><img src="assets/byok-local-settings.jpg" alt="Lisper BYOK settings running whisper.cpp and Ollama locally for free offline voice typing" width="85%"></p>
 
 ## Choose how you run it
 
 | Option | Cost | Where your audio goes | Best for |
 |---|---|---|---|
-| **Groq free tier (BYOK)** | Free within Groq's free tier | Groq's API, using your own key | Any PC, no GPU required |
 | **whisper.cpp + Ollama (BYOK)** | Free | Stays on your PC, fully offline | NVIDIA GPU with 8GB VRAM or more |
+| **Groq free tier (BYOK)** | Free within Groq's free tier | Groq's API, using your own key | Any PC, no GPU required |
 | **Lisper cloud** | Free to start, paid plans available | Lisper's servers | Works out of the box after sign-in |
 
 Any OpenAI-compatible endpoint works with BYOK, in the cloud or on your own machine. See [pricing](https://lisper.me/pricing?utm_source=github&utm_medium=readme) for Lisper cloud plans.
@@ -28,8 +28,8 @@ Any OpenAI-compatible endpoint works with BYOK, in the cloud or on your own mach
 
 ## Setup guides
 
-- [Free cloud voice typing with the Groq Whisper API](docs/byok-groq-free-voice-typing.md): no GPU needed, about 5 minutes.
 - [Offline voice typing with whisper.cpp and Ollama](docs/byok-offline-whisper-cpp-ollama.md): runs entirely on your own GPU.
+- [Free cloud voice typing with the Groq Whisper API](docs/byok-groq-free-voice-typing.md): no GPU needed, about 5 minutes.
 
 ## Features
 
@@ -52,7 +52,7 @@ Any OpenAI-compatible endpoint works with BYOK, in the cloud or on your own mach
 
 ### Is Lisper free?
 
-Yes. BYOK mode is free. You pay only what your chosen provider charges, and the Groq free tier and local models cost nothing. Lisper cloud is also free to start.
+Yes. BYOK mode is free. You pay only what your chosen provider charges, and local models and the Groq free tier cost nothing. Lisper cloud is also free to start.
 
 ### Does my audio pass through Lisper's servers in BYOK mode?
 
@@ -64,7 +64,7 @@ Yes. Run whisper.cpp for speech recognition and Ollama for text cleanup on your 
 
 ### Which services work with BYOK?
 
-Any service with an OpenAI-compatible API: Groq, OpenAI, a local whisper.cpp server, Ollama and others. The service URL must end with `/v1`.
+Any service with an OpenAI-compatible API: a local whisper.cpp server, Ollama, Groq, OpenAI and others. The service URL must end with `/v1`.
 
 ### Is the source code available?
 
