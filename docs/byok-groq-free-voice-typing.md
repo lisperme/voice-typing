@@ -35,7 +35,7 @@ Text cleanup (LLM)
 
 The service URL ends at `/v1`, with nothing after it.
 
-![Lisper BYOK page connected to the Groq API](../assets/byok-groq-settings.jpg)
+<p align="center"><img src="../assets/byok-groq-settings.jpg" alt="Lisper BYOK page connected to the Groq API" width="85%"></p>
 
 Optional: under **Settings > Primary language**, choose the language you speak. Groq then skips automatic language detection.
 

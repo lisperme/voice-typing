@@ -8,7 +8,7 @@ With **BYOK** (bring your own key), Lisper is free. You connect it to a speech r
 
 [Download for Windows](https://lisper.me/download?utm_source=github&utm_medium=readme) · [Website](https://lisper.me/?utm_source=github&utm_medium=readme) · [Setup guides](#setup-guides) · [Report an issue](https://github.com/lisperme/voice-typing/issues)
 
-![Lisper BYOK settings connected to the Groq API for free voice typing](assets/byok-groq-settings.jpg)
+<p align="center"><img src="assets/byok-groq-settings.jpg" alt="Lisper BYOK settings connected to the Groq API for free voice typing" width="85%"></p>
 
 ## Choose how you run it
 
@@ -40,7 +40,7 @@ Any OpenAI-compatible endpoint works with BYOK, in the cloud or on your own mach
 - **History**: every result is saved on your PC so you can copy it again.
 - **One hotkey**: `Right Alt` to start, `Right Alt` to stop.
 
-![A prompt dictated into Claude Code with Lisper](assets/claude-code-voice-prompt.jpg)
+<p align="center"><img src="assets/claude-code-voice-prompt.jpg" alt="A prompt dictated into Claude Code with Lisper" width="85%"></p>
 
 ## System requirements
 

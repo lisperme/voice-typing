@@ -8,7 +8,7 @@ Lisper 是一款 Windows 语音输入工具。按一下 `Right Alt` 开始说话
 
 [下载 Windows 版](https://lisper.me/zh/download?utm_source=github&utm_medium=readme) · [官网](https://lisper.me/zh?utm_source=github&utm_medium=readme) · [配置教程](#配置教程) · [反馈问题](https://github.com/lisperme/voice-typing/issues)
 
-![Lisper BYOK 设置页已连接 Groq API，实现免费语音输入](assets/byok-groq-settings.jpg)
+<p align="center"><img src="assets/byok-groq-settings.jpg" alt="Lisper BYOK 设置页已连接 Groq API，实现免费语音输入" width="85%"></p>
 
 ## 三种使用方式
 
@@ -42,7 +42,7 @@ BYOK 支持任何兼容 OpenAI 接口的服务，云端或本机均可。Lisper 
 - **历史记录**：每条结果保存在本机，可随时再次复制。
 - **一个热键**：`Right Alt` 开始，`Right Alt` 结束。
 
-![用 Lisper 在 Claude Code 中语音输入提示词](assets/claude-code-voice-prompt.jpg)
+<p align="center"><img src="assets/claude-code-voice-prompt.jpg" alt="用 Lisper 在 Claude Code 中语音输入提示词" width="85%"></p>
 
 ## 系统要求
 

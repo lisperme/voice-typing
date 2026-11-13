@@ -68,7 +68,7 @@ Text cleanup (LLM)
   API Key:       (leave blank)
 ```
 
-![Lisper BYOK page with whisper.cpp and Ollama running locally](../assets/byok-local-settings.jpg)
+<p align="center"><img src="../assets/byok-local-settings.jpg" alt="Lisper BYOK page with whisper.cpp and Ollama running locally" width="85%"></p>
 
 Lisper starts whisper-server in the background each time it opens, preloads both models, and stops the server when you exit.
 
