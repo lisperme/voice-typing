@@ -80,4 +80,4 @@ BYOK 支持任何兼容 OpenAI 接口的服务，云端或本机均可。Lisper 
 
 ---
 
-免费下载。专有软件 © 2026 Lisp Limited，注册于香港。
+免费下载。专有软件 © 2026 Lisper。

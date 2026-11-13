@@ -78,4 +78,4 @@ No. Lisper is free to download, and the app is proprietary. This repository host
 
 ---
 
-Free to download. Proprietary software © 2026 Lisp Limited, registered in Hong Kong.
+Free to download. Proprietary software © 2026 Lisper.
