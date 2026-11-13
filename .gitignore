@@ -1,0 +1,4 @@
+# Private signing keys and local scripts never go into this public repository
+*.pem
+*.local.*
+sync.ps1

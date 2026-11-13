@@ -1,0 +1,48 @@
+name: Bug report
+description: Something in Lisper does not work as expected.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not paste API keys, account emails or other private data in this issue. It is public.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open the BYOK page
+        2. ...
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Mode
+      options:
+        - BYOK with a cloud API (Groq, OpenAI or other)
+        - BYOK with local services (whisper.cpp, Ollama or other)
+        - Lisper cloud (signed in)
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Lisper version
+      placeholder: "1.11.13"
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: Windows 11 23H2
+  - type: input
+    id: app
+    attributes:
+      label: Target app
+      description: The app you were typing into.
+      placeholder: Claude Code in Windows Terminal

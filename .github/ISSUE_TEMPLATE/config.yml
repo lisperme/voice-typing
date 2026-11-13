@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Help center
+    url: https://lisper.me/help?utm_source=github&utm_medium=issues
+    about: Setup guides and answers to common questions.
+  - name: Contact Lisper
+    url: https://lisper.me/contact?utm_source=github&utm_medium=issues
+    about: Account, billing and other private questions.
